@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="apex">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>//APEX</title>
+  <link rel="shortcut icon" href="img/favicon.ico">X
+  <link rel="stylesheet" href="css/home.css">
+  <!-- SPELLS -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+
+  <script src="app.js"></script>
+</head>
+<body ng-controller="mainController">
+  <div ng-show="pageOverlay"id="page-overlay">
+  </div>
+  <nav id="mobile-menu" class="" ng-hide="onDesktop">
+      <a id="hamburger" ng-click="toggleMenu()" class="hamburger-menu" href="#">
+        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+        <path fill="#000000" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+        </svg>      
+      </a>
+
+    <ul id="list" ng-show="mobileMenu">
+      <li ng-click="toggleMenu()"><a href="#">HOME</a></li>
+      <li ng-click="toggleMenu()"><a href="#art">ART</a></li>
+      <li ng-click="toggleMenu()"><a href="#apparel">APPAREL</a></li>
+      <li ng-click="toggleMenu()"><a href="#contact">CONTACT</a></li>
+    </ul>
+  </nav>
+  <div id="header">
+    <a id="title" href="/">
+    <img ng-show="onDesktop" class="bunny" src="img/bunny-white.png">
+    <img ng-show="onDesktop" class="bunny" src="img/bunny-white.png">
+    <img class="bunny" src="img/bunny-black.png">
+      <img src="img/apex-label.gif">
+    <img class="bunny" src="img/bunny-black.png">
+    <img ng-show="onDesktop" class="bunny" src="img/bunny-white.png">
+    <img ng-show="onDesktop" class="bunny" src="img/bunny-white.png">
+    </a>
+  </div>
+  <div id="nav" ng-show="onDesktop">
+    <h2>
+      <a id="home-link" href="#" ng-class="{active:(isActive('/') || isActive(''))}">HOME</a>
+    </h2>
+    <h2>
+      <a id="art-link" href="#art" ng-class="{active:isActive('/art')}">ART</a>
+    </h2>
+    <h2>
+      <a id="apparel-link" href="#apparel" ng-class="{active:isActive('/apparel')}">APPAREL</a>
+    </h2>
+    <h2>
+      <a id="contact-link" href="#contact" ng-class="{active:isActive('/contact')}">CONTACT</a>
+    </h2>
+  </div>
+  <div id="content" class="fade-transition show" ng-view></div>
+  <div id="footer" class="fade-transition show"></div> 
+</body>
+</html>
