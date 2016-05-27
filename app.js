@@ -1,7 +1,7 @@
 
 
 
-var apex = angular.module('apex', ['ngRoute'])
+var apex = angular.module('apex', ['ngRoute', 'ngAnimate'])
 
 apex.config(function($routeProvider) {
 	$routeProvider
@@ -202,7 +202,7 @@ apex.controller('homeController', function($scope, $timeout) {
 			}
 			i += 1
 
-			if (!$scope.isActive("/")) break
+			if (!$scope.isActive("/")) break	
 		}
 		$scope.slideOut = true
 		$scope.slides = toShow

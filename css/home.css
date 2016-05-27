@@ -73,11 +73,12 @@
     height: 100px;
     width: 100%;
     display: flex;
+    justify-content: space-around;
   }
   #title img {
     z-index: 3;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0px;
+    margin-right: 0px;
     height: 100px;
     width: auto;
   }
@@ -92,7 +93,7 @@
   }
   #title:hover {
     color: white;
-    background-image: url(../img/depth.gif);
+    background: #000 url(../img/depth.gif) top right;
   }
 
 #mobile-menu {
@@ -157,8 +158,8 @@
   -webkit-text-shadow: 0 0 2px #000;
 }
 
-#mobile-menu ul li a:hover {
-  color: #fff;
+#mobile-menu ul li a:active {
+  color: #000;
 }
 
 
@@ -381,11 +382,31 @@
     margin-top: 100px;
   }
   .contact-details {
+    padding-top: 50px;
+    width: 30%;
     flex-flow: column;
     align-items: flex-end;
     justify-content: flex-end;
   }
+  .contact-btn {
+
+  }
+  .contact-detail {
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    margin-right: 10px;
+    opacity: 0;
+    height: 0px;
+    visibility: hidden;
+  }
+  .contact-btn:hover + .contact-detail{
+    height: 30px;
+    opacity: 1;
+    visibility: visible;
+  }
+
   .contact-blerb {
+    margin-top: 100px;
     width: 60%;
   }
   .hover-enlarge {
