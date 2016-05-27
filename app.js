@@ -26,7 +26,7 @@ apex.config(function($routeProvider) {
 
 		.when('/contact', {
 			templateUrl : 'pages/contact.html',
-			controller  : 'contactController'
+			controller  : 'mainController'
 		})
 })
 
