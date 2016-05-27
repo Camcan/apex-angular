@@ -253,6 +253,7 @@
     margin-top: 50px;
     padding-top: 10px;
     padding-right: 20px;
+    padding-left: 20px;
     padding-bottom: 10px;
     display: flex;
     flex-flow: row nowrap;
@@ -274,11 +275,12 @@
   }
 
   .contact-detail {
-    -webkit-transition: all 0.4s;
-    transition: all 0.4s;
-    margin-right: 10px;
+    -webkit-transition: height 0.4s, opacity 0.4s;
+    transition: height 0.4s, opacity 0.4s;;
     opacity: 0;
     height: 0px;
+    width: 0px;
+    text-align: right;
     visibility: hidden;
   }
  
@@ -420,6 +422,7 @@
    .contact-btn:hover > .contact-detail{
     height: 30px;
     opacity: 1;
+    width: 200px;
     visibility: visible;
   }
   .contact-blerb {
