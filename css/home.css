@@ -1,4 +1,4 @@
-
+@media screen and (min-width:   0px) {
   * {
       margin: 0;
       padding: 0;
@@ -193,7 +193,18 @@
     margin-left: 10%;
     height: 500px;
   }
+.template {
+    opacity: 1;
+    transition: opacity 0.2s;  
+}
 
+.template:not(.active){
+  opacity: 1;
+}
+
+.template.active {
+    opacity: 0;
+}
   #content a:hover {
 
   }
@@ -260,9 +271,17 @@
     color: black;
     margin-top: 50px;
     min-width: 300px;
-
   }
 
+  .contact-detail {
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    margin-right: 10px;
+    opacity: 0;
+    height: 0px;
+    visibility: hidden;
+  }
+ 
   .quad-menu {
     max-width: 550px;
     min-height: 500px;
@@ -358,6 +377,8 @@
   }
 
 
+}
+
 
 
 
@@ -389,22 +410,18 @@
     justify-content: flex-end;
   }
   .contact-btn {
-
+    display: flex;
+    flex-flow: column;
+    align-content: flex-end;
   }
-  .contact-detail {
-    -webkit-transition: all 0.4s;
-    transition: all 0.4s;
-    margin-right: 10px;
-    opacity: 0;
-    height: 0px;
-    visibility: hidden;
+  .contact-btn svg {
+    align-self: flex-end;
   }
-  .contact-btn:hover + .contact-detail{
+   .contact-btn:hover > .contact-detail{
     height: 30px;
     opacity: 1;
     visibility: visible;
   }
-
   .contact-blerb {
     margin-top: 100px;
     width: 60%;

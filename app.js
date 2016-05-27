@@ -33,6 +33,12 @@ apex.config(function($routeProvider) {
 
 apex.controller('mainController', function($scope, $location) {
 	$scope.onDesktop = window.matchMedia("(min-width: 650px)").matches
+	$scope.$on("$routeChangeSuccess", function (scope, next, current) {
+        setTimeout(function() { 
+        	$scope.transitionState = "" 
+        }, 100)
+    })
+
 	$scope.pageOverlay = false
 	$scope.mobileMenu = false
 	$scope.selectedSection = {}
@@ -48,6 +54,7 @@ apex.controller('mainController', function($scope, $location) {
 			document.getElementById("mobile-menu").setAttribute('class', 'open') 
 		}
 	}
+
 	$scope.isActive = function(route) {
         return route === $location.path();
     }
@@ -206,9 +213,9 @@ apex.controller('homeController', function($scope, $timeout) {
 		}
 		$scope.slideOut = true
 		$scope.slides = toShow
-		$scope.slideOut = false
 		console.log($scope.slides)
 		$timeout(iterateThroughImages, 3000)
+		$scope.slideOut = false
 	}
     iterateThroughImages()
     

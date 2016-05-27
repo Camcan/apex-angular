@@ -24,11 +24,11 @@
         </svg>      
       </a>
 
-    <ul id="list" ng-show="mobileMenu">
-      <li ng-click="toggleMenu()"><a href="#">HOME</a></li>
-      <li ng-click="toggleMenu()"><a href="#art">ART</a></li>
-      <li ng-click="toggleMenu()"><a href="#apparel">APPAREL</a></li>
-      <li ng-click="toggleMenu()"><a href="#contact">CONTACT</a></li>
+    <ul id="list">
+      <li ng-click="toggleMenu()" ng-show="mobileMenu"><a href="#">HOME</a></li>
+      <li ng-click="toggleMenu()" ng-show="mobileMenu"><a href="#art">ART</a></li>
+      <li ng-click="toggleMenu()" ng-show="mobileMenu"><a href="#apparel">APPAREL</a></li>
+      <li ng-click="toggleMenu()" ng-show="mobileMenu"><a href="#contact">CONTACT</a></li>
     </ul>
   </nav>
   <div id="header">
@@ -46,16 +46,16 @@
   </div>
   <div id="nav" ng-show="onDesktop">
     <h2>
-      <a id="home-link" href="#" ng-class="{active:(isActive('/') || isActive(''))}">HOME</a>
+      <a id="home-link" href="#" ng-click="transitionState = 'active'" ng-class="{active:(isActive('/') || isActive(''))}">HOME</a>
     </h2>
     <h2>
-      <a id="art-link" href="#art" ng-class="{active:isActive('/art')}">ART</a>
+      <a id="art-link" href="#art" ng-click="transitionState = 'active'" ng-class="{active:isActive('/art')}">ART</a>
     </h2>
     <h2>
-      <a id="apparel-link" href="#apparel" ng-class="{active:isActive('/apparel')}">APPAREL</a>
+      <a id="apparel-link" href="#apparel" ng-click="transitionState = 'active'" ng-class="{active:isActive('/apparel')}">APPAREL</a>
     </h2>
     <h2>
-      <a id="contact-link" href="#contact" ng-class="{active:isActive('/contact')}">CONTACT</a>
+      <a id="contact-link" href="#contact" ng-click="transitionState = 'active'" ng-class="{active:isActive('/contact')}">CONTACT</a>
     </h2>
   </div>
   <div id="content" class="fade-transition show" ng-view></div>
