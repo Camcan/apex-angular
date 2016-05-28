@@ -199,14 +199,13 @@
   #content.ng-hide {
     opacity: 0;
   }
-.template {
-    opacity: 1;
-}
+
 
 
   #content-loader {
+    padding-top: 100px;
     opacity: 1;
-    transition: opacity 0.4s;
+    transition: opacity 0.5s;
     left: 0px;
     top: 0px;
     width: 100%;
@@ -214,20 +213,13 @@
     z-index: 1;
     background-size: 200px 200px;
     background: black;
-    position: relative;
+    text-align: center;
   }
 
   #content-loader.ng-hide  {
     opacity: 0;
   }
 
-
-#content-loader svg {
-  margin-right: auto;
-  margin-left: 20%;
-  width: 70%;
-  height: 100%;
-}
 
 #content-loader #pulsar{
   stroke-dasharray:281;

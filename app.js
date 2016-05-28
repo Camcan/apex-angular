@@ -40,11 +40,11 @@ apex.controller('mainController', function($scope, $location) {
 			$scope.$on("$viewContentLoaded" , function (scope, next, current) {
 		    	// $scope.$on('$viewContentLoaded', function(){
 		    //Here your view content is fully loaded !!
-		  		setTimeout(function() { 
+		  		// setTimeout(function() { 
 		        	console.log($scope.transitionState)
 		        	$scope.transitionState = false 
 		        	console.log($scope.transitionState)
-		        }, 01)
+		        // }, 01)
 			  // })
 		    })
 		}
