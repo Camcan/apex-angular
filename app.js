@@ -33,11 +33,22 @@ apex.config(function($routeProvider) {
 
 apex.controller('mainController', function($scope, $location) {
 	$scope.onDesktop = window.matchMedia("(min-width: 650px)").matches
-	$scope.$on("$routeChangeSuccess", function (scope, next, current) {
-        setTimeout(function() { 
-        	$scope.transitionState = "" 
-        }, 100)
-    })
+	$scope.transitionState = false
+	$scope.contentTransition = function(){
+        if ($scope.transitionState == false) {
+	        $scope.transitionState = true
+			$scope.$on("$viewContentLoaded" , function (scope, next, current) {
+		    	// $scope.$on('$viewContentLoaded', function(){
+		    //Here your view content is fully loaded !!
+		  		setTimeout(function() { 
+		        	console.log($scope.transitionState)
+		        	$scope.transitionState = false 
+		        	console.log($scope.transitionState)
+		        }, 01)
+			  // })
+		    })
+		}
+	}
 
 	$scope.pageOverlay = false
 	$scope.mobileMenu = false

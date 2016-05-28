@@ -46,19 +46,24 @@
   </div>
   <div id="nav" ng-show="onDesktop">
     <h2>
-      <a id="home-link" href="#" ng-click="transitionState = 'active'" ng-class="{active:(isActive('/') || isActive(''))}">HOME</a>
+      <a id="home-link" ng-click="contentTransition()" href="#" ng-class="{active:(isActive('/') || isActive(''))}">HOME</a>
     </h2>
     <h2>
-      <a id="art-link" href="#art" ng-click="transitionState = 'active'" ng-class="{active:isActive('/art')}">ART</a>
+      <a id="art-link" ng-click="contentTransition()" href="#art" ng-class="{active:isActive('/art')}">ART</a>
     </h2>
     <h2>
-      <a id="apparel-link" href="#apparel" ng-click="transitionState = 'active'" ng-class="{active:isActive('/apparel')}">APPAREL</a>
+      <a id="apparel-link"  ng-click="contentTransition()" href="#apparel" ng-class="{active:isActive('/apparel')}">APPAREL</a>
     </h2>
     <h2>
-      <a id="contact-link" href="#contact" ng-click="transitionState = 'active'" ng-class="{active:isActive('/contact')}">CONTACT</a>
+      <a id="contact-link" ng-click="contentTransition()" href="#contact" ng-class="{active:isActive('/contact')}">CONTACT</a>
     </h2>
   </div>
-  <div id="content" class="fade-transition show" ng-view></div>
+  <div id="content-loader" ng-show="transitionState">
+    <svg version="1.2" height="300" width="100%" xmlns="http://www.w3.org/2000/svg" viewport="0 0 60 60" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <path id="pulsar" stroke="rgba(0,155,155,1)" fill="none" stroke-width="1"stroke-linejoin="round" d="M0,90L250,90Q257,60 262,87T267,95 270,88 273,92t6,35 7,-60T290,127 297,107s2,-11 10,-10 1,1 8,-10T319,95c6,4 8,-6 10,-17s2,10 9,11h210" /> 
+    </svg>
+  </div>
+  <div id="content" class="ng-cloak fade-transition show" ng-hide="transitionState" ng-view></div>
   <div id="footer" class="fade-transition show"></div> 
 </body>
 </html>
