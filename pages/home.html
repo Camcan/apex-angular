@@ -1,8 +1,8 @@
 <div class="template {{transitionState}}">
 	<div class="image-slider">
 		<div id="slider">
-			<div ng-repeat="image in slides" ng-hide="slideOut"class="slide-image">
-				<img class="slide-animation" src="{{image.img}}">
+			<div ng-repeat="image in slides" class="slide-image">
+				<img class="slide-animation" src="{{image.img}}" ng-hide="slideOut" >
 			</div>
 		</div>
 	</div>

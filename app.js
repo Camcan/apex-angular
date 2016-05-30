@@ -17,6 +17,12 @@ apex.config(function($routeProvider) {
 
 		.when('/view', {
 			templateUrl : 'pages/portfolio.html',
+			controller : 'artController'
+		})
+
+		.when('/view/item', {
+			templateUrl : 'pages/item.html',
+			controller : 'artController'
 		})
 		
 		.when('/apparel', {
@@ -32,6 +38,8 @@ apex.config(function($routeProvider) {
 
 
 apex.controller('mainController', function($scope, $location) {
+	$scope.selectedSection = false
+	$scope.selectedItem = false
 	$scope.onDesktop = window.matchMedia("(min-width: 650px)").matches
 	$scope.transitionState = false
 	$scope.contentTransition = function(){
@@ -220,7 +228,7 @@ apex.controller('homeController', function($scope, $timeout) {
 			}
 			i += 1
 
-			if (!$scope.isActive("/")) break	
+			if (!$scope.isActive("/")) return	
 		}
 		$scope.slideOut = true
 		$scope.slides = toShow
@@ -232,14 +240,47 @@ apex.controller('homeController', function($scope, $timeout) {
     
 })
 
-apex.controller('artController', function($scope, $location) {
-	$scope.showArt = function(section){
-		$scope.selectedSection = $scope.art[section]
-		console.log($scope.selectedSection[0].img)
-		$location.path('/view')
+apex.controller('artController', function($scope, $location, PortfolioSelection) {
+	$scope.selectedSection = PortfolioSelection.section()
+	$scope.selectedItem = PortfolioSelection.item()
+	$scope.back = function(menu){
+		$location.path('/' + menu)
+	}
+	$scope.viewSection = function(section){
+			PortfolioSelection.setSection(section)
+			$location.path('/view')
+	}
+	$scope.viewSelected = function(item){
+		PortfolioSelection.setItem(item)
+		console.log($scope.selectedItem)
+		$location.path('view/item')
 	}
 })
 
 
 apex.controller('contactController', function($scope) {
+})
+
+
+apex.service('PortfolioSelection', function() {
+ var section = {}
+ var item = {}
+ function setSection(data) {
+   section = data
+ }
+ function getSection() {
+  return section
+ }
+ function setItem(data) {
+   item = data
+ }
+ function getItem() {
+  return item
+ }
+ return {
+  setSection: setSection,
+  section: getSection,
+  setItem: setItem,
+  item: getItem
+ }
 })
