@@ -80,6 +80,7 @@ apex.controller('mainController', function($scope, $location) {
 	$scope.art = {
 		fine: [
 			{
+				title: 'Green Tears',
 				img: 'img/art/green-tears.jpg',
 				med: 'Watercolor on Parchment',
 				tags: [
@@ -88,6 +89,7 @@ apex.controller('mainController', function($scope, $location) {
 				],
 			},
 			{
+				title: 'Flower Face',
 				img: 'img/art/flower-face.jpg',
 				med: 'Watercolor on Parchment',
 				tags: [
@@ -258,9 +260,8 @@ apex.controller('artController', function($scope, $location, PortfolioSelection)
 })
 
 
-apex.controller('contactController', function($scope) {
+apex.controller('apparelController', function($scope) {
 })
-
 
 apex.service('PortfolioSelection', function() {
  var section = {}
