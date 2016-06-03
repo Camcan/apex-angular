@@ -1,6 +1,14 @@
 <div class="template {{transitionState}}">
-	<div class="image-slider">
+	<div class="image-slider" ng-hide="slideOut">
 		<div ng-repeat="image in slides" class="slide-image">
-			<img class="slide-in drop-shadow" src="{{image.img}}"> 
+			<img class="drop-shadow" src="{{image.img}}"> 
+		</div>
+	</div>
+	<div class="home-blerb">
+		<h3>
+		Bella Cole (:|: Apex); a Wellington based  designer specializing in _________ . <br>
+		She has been creating artworks from a young age, developing the unique style we see today. As a result, she has a history of commissioned murals around central Wellington, posters for Eyegum Music Collective, and has an up and coming exhibition at ThirdEye (opening July 1st).  	.
+		Although young, Bella is ambitious that Apex Art will soon become a well known brand and title.
+		</h3>	
 	</div>
 </div>

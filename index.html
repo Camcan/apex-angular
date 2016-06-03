@@ -13,7 +13,10 @@
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-animate.js"></script>
 
-  <script src="app.js"></script>
+  <script src="js/routes.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/services.js"></script>
+  <!-- <script src="js/app.js"></script> -->
 </head>
 <body ng-controller="mainController">
   <div ng-show="pageOverlay"id="page-overlay">
@@ -21,7 +24,7 @@
   <nav id="mobile-menu" class="" ng-hide="onDesktop">
       <a id="hamburger" ng-click="toggleMenu()" class="hamburger-menu" href="#">
         <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-        <path fill="#000000" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+        <path fill="#000000" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"></path>
         </svg>      
       </a>
 
@@ -36,18 +39,18 @@
     <a id="title" href="/">
     <img ng-show="onDesktop" class="bunny" src="img/bunny-white.png">
     <img ng-show="onDesktop" class="bunny" src="img/bunny-white.png">
-    <img ng-show="onDesktop" class="bunny" src="img/bunny-white.png">
-    <img class="bunny" src="img/bunny-black.png">
-      <img src="img/apex-label.gif">
-    <img class="bunny" src="img/bunny-black.png">
-    <img ng-show="onDesktop" class="bunny" src="img/bunny-white.png">
+    <img ng-show="onDesktop || mobileMenu" class="bunny" src="img/bunny-white.png">
+    <img ng-hide="mobileMenu" class="bunny" src="img/bunny-black.png">
+    <img src="img/apex-label.gif">
+    <img ng-hide="mobileMenu"class="bunny" src="img/bunny-black.png">
+    <img ng-show="onDesktop || mobileMenu" class="bunny" src="img/bunny-white.png">
     <img ng-show="onDesktop" class="bunny" src="img/bunny-white.png">
     <img ng-show="onDesktop" class="bunny" src="img/bunny-white.png">
     </a>
   </div>
   <div id="nav" ng-show="onDesktop">
     <h2>
-      <a id="home-link" ng-click="contentTransition()" href="#" ng-class="{active:(isActive('/') || isActive(''))}">HOME</a>
+      <a id="home-link" ng-click="contentTransition()" href="#" ng-class="">HOME</a>
     </h2>
     <h2>
       <a id="art-link" ng-click="contentTransition()" href="#art" ng-class="{active:isActive('/art')}">ART</a>

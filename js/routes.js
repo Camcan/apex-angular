@@ -1,6 +1,3 @@
-
-
-
 var apex = angular.module('apex', ['ngRoute', 'ngAnimate'])
 
 apex.config(function($routeProvider) {
@@ -15,12 +12,12 @@ apex.config(function($routeProvider) {
 			controller  : 'artController'
 		})
 
-		.when('/view', {
+		.when('/art/view', {
 			templateUrl : 'pages/portfolio.html',
 			controller : 'artController'
 		})
 
-		.when('/view/item', {
+		.when('/art/view/item', {
 			templateUrl : 'pages/item.html',
 			controller : 'artController'
 		})

@@ -65,7 +65,7 @@
     display: flex;
     flex-flow: column wrap;
     width: 100%;
-    height: 200px;
+    height: 180px;
   }
 
   #title {
@@ -84,14 +84,6 @@
     width: auto;
   }
 
-  #typed-title > h2{
-    color: #eee;
-    height: 50px;
-    margin-top: 50px;
-    padding-top: -10px ;
-    text-align: center;
-    font-size: 50px;
-  }
   #title:hover {
     color: white;
     background: #000 url(../img/depth.gif) top right;
@@ -112,6 +104,7 @@
   -moz-transform: rotate(360deg);
   -ms-transform: rotate(360deg);
   transition: transform 0s;
+  margin-top: 20px;
 }
 
 #mobile-menu.open .hamburger-menu svg{
@@ -192,8 +185,6 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
     margin-top: -20px;
     min-height: 500px;
     height: auto;
@@ -241,14 +232,14 @@
 
    .image-slider {
     width: 100%;
-    height: 400px;
+    height: 200px;
     margin-left: 0%;
-    padding-top: 50px;
     display: flex;
     background: black;
     flex-flow: row wrap;
     align-items: center;
    justify-content: center;
+    transition: opacity 1s;
   }
   .slide-image {
     margin-top: 30px;
@@ -256,14 +247,32 @@
     position: center;
     position: center;
      margin: 0px 0px 0px 0px;
-     max-height: 200px;
-    width: 50%;
+     height: 100px;
     background: white;
-
+    width: 100px;
+    width: 25%;
+    opacity: 1;
   }
+
   .slide-image img {
     width: 100%;
+  }
+  .image-slider.ng-hide {
+    opacity: 0;
+  }
 
+
+  .home-blerb {
+    padding-top: 50px;
+    width: 100%;
+    color: black;
+    height: auto;
+    text-align: left;
+    margin-left: 0%;
+    padding-bottom: 50px;
+  }
+  .home-blerb h3 {
+    margin-bottom: 50px;
   }
 
   .flexbox {
@@ -303,7 +312,7 @@
 
   .contact-detail {
     -webkit-transition: height 0.4s, opacity 0.4s;
-    transition: height 0.4s, opacity 0.4s;;
+    transition: height 0.4s, opacity 0.4s;
     opacity: 0;
     height: 0px;
     width: 0px;
@@ -311,20 +320,44 @@
     visibility: hidden;
   }
   .apparel {
+    padding-top: 20px;
     width: 100%;
     height: 100%;
     color: black;
   }
   .apparel .banner-img{
-    height: 200px;
-    width: 100%;
-    background: url('../img/apparel/folded-shirts.jpg') center;
+    height: 100px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background: url('../img/apparel/folded-shirts.jpg') center fixed no-repeat;
+    background-size: contain;
    -webkit-filter: grayscale(100%);
     filter: gray;
   }
   .apparel .banner-img:hover{
     -webkit-filter: none;
     filter: none;
+  }
+  .apparel h2 {
+    margin-left: 10%;
+    width: 80%;
+
+  }
+  .apparel img {
+    position: inline-flex;
+    width: 40%;
+    margin: 10px;
+    max-width: 150px;
+    max-height: 150px;
+  }
+  .apparel .gallery {
+    padding: 20px 20px 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center ;
+    width: 100%;
   }
   .quad-menu {
     max-width: 550px;
@@ -401,9 +434,11 @@
 
   .back-btn {
     position: left;
-    padding-top: 20px;
+    padding-top: 20px ;
+    margin-top: 20px;
     width: 50px;
     clear: right;
+
     cursor: pointer; cursor: hand; 
   }
 
@@ -450,6 +485,5 @@
     visibility: visible;
     transition: visibility 0.4s;
   }
-
 
 }
