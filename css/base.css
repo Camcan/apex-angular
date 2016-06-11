@@ -151,6 +151,9 @@
   -moz-text-shadow: 0 0 2px #000;
   -webkit-text-shadow: 0 0 2px #000;
 }
+#mobile-menu ul li a img {
+  max-height: 50px;
+}
 
 #mobile-menu ul li a:active {
   color: #000;
@@ -357,6 +360,9 @@
     height: 100px;
     width: 300px;
     cursor: pointer; cursor: hand; 
+  }
+  .quad-menu .item img {
+    max-height: 250px;
   }
   .item h2 {
     text-align: right;
