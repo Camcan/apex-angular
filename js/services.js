@@ -254,95 +254,257 @@ apex.service('ImageDatabase', function() {
         desc: '',
         imgs: ['img/art/fine/stickers.jpg', 'img/art/fine/stickers-2.jpg', 'img/art/fine/stickers-3.jpg'],
         med: 'Mixed Media; Vinyl',
-      },
-      
-      
-      
-      
-      
-      
-      
+      },      
     ],
-    Digital: [
+    Body: [
       {
-        img: "img/art/eye-roll.jpg"
+        title: 'Circular Henna',
+        desc: '',
+        imgs: ['img/art/body/circle-henna.jpg'],
+        med: 'Traditional Arabic Henna Ink',
       },
       {
-        img: "img/art/mia.png"
+        title: 'Ghostly',
+        desc: '',
+        imgs: ['img/art/body/ghostly-x4.jpg', 'img/art/body/ghostly.jpg'],
+        med: 'Body Paint',
       },
       {
-        img: "img/art/donut-vector.jpg"
+        title: 'Wings',
+        desc: '',
+        imgs: ['img/art/body/wings-1.jpg'],
+        med: 'Body Paint',
       },
       {
-        img: "img/art/eyes.png"
-      },
-      {
-        img: "img/art/angelina2.jpg"
-      },
-      {
-        img: "img/art/angelina.jpg"
+        title: 'One Halloween',
+        desc: '',
+        imgs: ['img/art/body/old-face.jpg', 'img/art/body/lethal.jpg'],
+        med: 'Body Paint',
       }
-
-
     ],
     Commission: [
       {
-        img: 'img/art/eyegum-poster.jpg',
-        med: 'Digital Art',
-        tags: [
-          'digital',
-          'poster'
-        ],
+        title: "EyeGum Poster",
+        desc: '',
+        imgs: ['img/art/commission/eyegum-poster.jpg'],
+        med: 'Digital Art'
       },
       {
-        img: 'img/art/b&w-deck.jpg',
-        med: 'Oil on Canadian Maple',
-        tags: [
-          'Oil',
-          'skate-deck'
-        ],
+        title: 'Massive Cover: Smoking',
+        desc: '',
+        imgs: ['img/art/commission/MASSIVE-smoking.jpg'],
+        med: 'Mixed-Media; Magazine Print',
       },
       {
-        img: 'img/art/longboard-swirls.jpg',
-        med: 'Oil on Canadian Maple',
-        tags: [
-          'Oil',
-          'skate-deck'
-        ],
+        title: 'Eek',
+        desc: '',
+        imgs: ['img/art/commission/framed-eek.jpg'],
+        med: 'What is dees',
       },
       {
-        img: 'img/art/longboards.jpg',
-        med: 'Oil on Canadian Maple',
-        tags: [
-          'Oil',
-          'skate-deck'
+        title: 'Erk',
+        desc: '',
+        imgs: ['img/art/commission/framed-erk.jpg'],
+        med: 'What is dees',
+      },
+      {
+        title: 'Early Framed Pieces',
+        desc: '',
+        imgs: [
+        'img/art/commission/framed-1.jpg', 
+        'img/art/commission/framed-2.jpg', 
+        'img/art/commission/framed-drmorsetattoo.jpg'],
+        med: 'What is dees',
+      },
+      {
+        title: "M-E-O-W",
+        desc: '',
+        imgs: ['img/art/commission/meow.jpg'],
+        med: 'Oil on Canvas'
+      },
+      {
+        title: 'Spiraling Deck',
+        desc: '',
+        imgs: [
+        'img/art/commission/board-b&w.jpg', 
+        'img/art/commission/board-b&w-1.jpg'],
+        med: 'Oil Paint & Varnish on Canadian Maple',
+      },
+      {
+        title: 'Cityscape Deck',
+        desc: '',
+        imgs: ['img/art/commission/board-cityscape.jpg'],
+        med: 'Oil Paint & Varnish on Canadian Maple',
+      },
+      {
+        title: 'Fucking Radical Deck',
+        desc: '',
+        imgs: ['img/art/commission/board-fucking-radical.jpg'],
+        med: 'Oil Paint & Varnish on Canadian Maple',
+      },
+      {
+        title: 'Woman-ly Deck',
+        desc: '',
+        imgs: ['img/art/commission/board-woman.jpg'],
+        med: 'Oil Paint & Varnish on Canadian Maple',
+      },
+      {
+        title: 'Spiraling Longboard',
+        desc: '',
+        imgs: [
+        'img/art/commission/longboard-blue-waves.jpg', 
+        'img/art/commission/longboard-blue-waves-1.jpg', 
+        'img/art/commission/longboard-blue-waves-2.jpg'
         ],
-      }
+        med: 'Oil Paint & Varnish on Canadian Maple',
+      },
+      {
+        title: 'Green Pintail Longboard',
+        desc: '',
+        imgs: [
+        'img/art/commission/longboard-green-waves.jpg', 
+        'img/art/commission/longboard-green-waves-1.jpg'
+        ],
+        med: 'Oil Paint & Varnish on Canadian Maple',
+      },
+      {
+        title: 'Old Longboards',
+        desc: '',
+        imgs: [
+        'img/art/commission/longboards.jpg', 
+        'img/art/commission/longboard-giraffe-1.jpg'
+        ],
+        med: 'Oil Paint & Varnish on Canadian Maple'
+      },
+
+      {
+        title: 'Mural: Tasman St',
+        desc: '',
+        imgs: [
+        'img/art/commission/mural-tasman-st.jpg', 
+        'img/art/commission/mural-tasman-st-1.jpg', 
+        'img/art/commission/mural-tasman-st-2.jpg'
+        ],
+        med: 'Spray Paint; Concrete',
+      },
+      {
+        title: 'Mural: Wrath',
+        desc: '',
+        imgs: [
+        'img/art/commission/mural-tiger-diamonds.jpg', 
+        'img/art/commission/mural-tiger-diamonds-2.jpg', 
+        'img/art/commission/mural-tiger-diamonds-4.jpg'
+        ],
+        med: 'Spray Paint; Concrete',
+      },
+      {
+        title: 'Mural: Lips',
+        desc: '',
+        imgs: [
+        'img/art/commission/mural-lips.jpg'
+        ],
+        med: 'Spray Paint; Concrete',
+      },
+      {
+        title: 'Mural: Day-Dream',
+        desc: '',
+        imgs: [
+        'img/art/commission/mural-daydream.jpg'
+        ],
+        med: 'Spray Paint; Concrete',
+      },
+      {
+        title: 'Mural: Bear',
+        desc: '',
+        imgs: [
+        'img/art/commission/mural-bear.jpg'
+        ],
+        med: 'Spray Paint; Concrete',
+      },
+      {
+        title: 'Inner Calm',
+        desc: '',
+        imgs: [
+        'img/art/commission/purple-lady.jpg', 
+        'img/art/commission/purple-lady-1.jpg'
+        ],
+        med: 'Spray & Oil Paint; Canvas',
+      },
+      {
+        title: "Mascara's a Bitch",
+        desc: '',
+        imgs: ['img/art/commission/spray-eyes.jpg'],
+        med: 'Spray & Oil Paint: Canvas'
+      },
+      {
+        title: 'Tattoo Design: Bird',
+        desc: '',
+        imgs: [
+        'img/art/commission/tattoo-bird.jpg'
+        ],
+        med: 'Pencil on Paper',
+      },
     ],
-    Mural: [
+    Digital: [
       {
-        img: 'img/art/mural-bear.jpg',
-        med: 'Spray/Concrete',
-        tags: [
-          'commission', 
-          'streetart'
-        ],
+        title: "Sweetness",
+        desc: '',
+        imgs: ['img/art/digital/donut-vector.jpg'],
+        med: 'Digital Art'
       },
       {
-        img: 'img/art/tiger-mural.jpg',
-        med: 'Spray/Concrete',
-        tags: [
-          'commission', 
-          'streetart'
-        ],
+        title: "Eyes",
+        desc: '',
+        imgs: ['img/art/digital/eyes.png'],
+        med: 'Digital Art'
       },
       {
-        img: 'img/art/tasman-st-mural.jpg',
-        med: 'Spray/Concrete',
-        tags: [
-          'commission', 
-          'streetart'
-        ],
+        title: "",
+        desc: '',
+        imgs: ['img/art/digital/lazers.jpg'],
+        med: 'Mixed Media'
+      },
+      {
+        title: "Angelina #1",
+        desc: '',
+        imgs: ['img/art/digital/digital-angelina2.jpg'],
+        med: 'Digital Art'
+      },
+      {
+        title: "Angelina #2",
+        desc: '',
+        imgs: ['img/art/digital/digital-angelina.jpg'],
+        med: 'Digital Art'
+      },
+      {
+        title: "MIA",
+        desc: '',
+        imgs: ['img/art/digital/mia.png'],
+        med: 'Digital Art'
+      },
+      {
+        title: "Eye Roll",
+        desc: '',
+        imgs: ['img/art/digital/digital-eye-roll.jpg'],
+        med: 'Digital Art'
+      },
+      {
+        title: "Mother Mary",
+        desc: '',
+        imgs: ['img/art/digital/mother-mary.jpg'],
+        med: 'Digital Art'
+      },
+      {
+        title: "Digital Bear",
+        desc: '',
+        imgs: ['img/art/digital/digital-bear.jpg'],
+        med: 'Digital Art'
+      },
+      {
+        title: "Haphazard Beehive",
+        desc: '',
+        imgs: ['img/art/digital/squiggly-beehive.jpg'],
+        med: 'Digital Art'
       }
     ]
   }
