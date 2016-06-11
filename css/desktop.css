@@ -144,7 +144,7 @@
 @media screen and (min-width: 1200px) {
 
   .home-blerb {
-    margin-top: 100px;
+    padding-top: 100px;
   }
 
   .apparel .banner-img {
