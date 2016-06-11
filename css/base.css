@@ -213,7 +213,6 @@
   
   #footer .contact-btn:hover {
     max-width: 200px;
-    background: blue;
     justify-content: center;
   }
 
@@ -239,17 +238,20 @@
 
   /*==============  SECTIONS ====================='
 */
-
+   .home {min-height: 900px;
+    width: 100%;
+    background: black url('../img/bunny-sticker.bmp') no-repeat center bottom;
+  }
   .home-blerb{
-    padding-top: 50px;
+    padding-top: 30px;
     width: 80%;
-    color: black;
     height: auto;
     text-align: center;
     margin-left: 10%;
     padding-bottom: 0px;
   }
   .home-blerb p {
+    text-shadow: 1px 1px 3px#000;
     margin-bottom: 20px;
   }
 
@@ -386,7 +388,7 @@
     max-width: 400px;
     max-height: 300px;
   }
-
+  
   #portfolio .item img {
     max-height: 300px;
     max-width: 100%;
@@ -398,11 +400,6 @@
     display: relative;
     margin: 0;
     margin-top: -40px;
-    background: rgba(0,0,0,0.2);
-    
-  }
-  #portfolio .item .tags {
-    color: #888;
   }
 
   #profile-bg {

@@ -39,18 +39,18 @@
     <a id="title" href="/">
     <img ng-show="onDesktop" class="bunny" src="img/bunny-white.png">
     <img ng-show="onDesktop" class="bunny" src="img/bunny-white.png">
+    <img ng-show="onDesktop" class="bunny" src="img/bunny-white.png">
     <img ng-show="onDesktop || mobileMenu" class="bunny" src="img/bunny-white.png">
-    <img ng-hide="mobileMenu" class="bunny" src="img/bunny-black.png">
     <img src="img/apex-label.gif">
-    <img ng-hide="mobileMenu"class="bunny" src="img/bunny-black.png">
     <img ng-show="onDesktop || mobileMenu" class="bunny" src="img/bunny-white.png">
+    <img ng-show="onDesktop" class="bunny" src="img/bunny-white.png">
     <img ng-show="onDesktop" class="bunny" src="img/bunny-white.png">
     <img ng-show="onDesktop" class="bunny" src="img/bunny-white.png">
     </a>
   </div>
   <div id="nav" ng-show="onDesktop">
-    <h2>
-      <a id="home-link" ng-click="contentTransition()" href="#" ng-class="">HOME</a>
+    <h2 ng-show="isActive('art') || isActive('apparel') || isActive('contact')">
+      <a id="home-link" ng-click="contentTransition()" href="#" ng-class=""><img src="img/bunny-black.png"></a>
     </h2>
     <h2>
       <a id="art-link" ng-click="contentTransition()" href="#art" ng-class="{active:isActive('/art')}">ART</a>
@@ -59,7 +59,7 @@
       <a id="apparel-link"  ng-click="contentTransition()" href="#apparel" ng-class="{active:isActive('/apparel')}">APPAREL</a>
     </h2>
     <h2>
-      <a id="contact-link" ng-click="contentTransition()" href="#contact" ng-class="{active:isActive('/contact')}">CONTACT</a>
+      <a id="contact-link" ng-click="contentTransition()" href="#contact" ng-class="{active:isActive('/contact')}">ABOUT</a>
     </h2>
   </div>
   <div id="content-loader" ng-show="transitionState">
