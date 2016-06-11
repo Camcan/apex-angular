@@ -22,6 +22,7 @@ apex.controller('mainController', function($scope, $location) {
 	$scope.pageOverlay = false
 	$scope.mobileMenu = false
 	$scope.selectedSection = {}
+	$scope.pageTitle = ""
 	$scope.toggleMenu = function(){
 		if ($scope.mobileMenu == true){
 			console.log($scope.mobileMenu)
@@ -46,7 +47,7 @@ apex.controller('mainController', function($scope, $location) {
 
 
 	$scope.art = {
-		fine: [
+		Fine: [
 			{
 				title: 'Green Tears',
 				img: 'img/art/green-tears.jpg',
@@ -83,7 +84,7 @@ apex.controller('mainController', function($scope, $location) {
 			}
 
 		],
-		digital: [
+		Digital: [
 			{
 				img: "img/art/eye-roll.jpg"
 			},
@@ -105,7 +106,7 @@ apex.controller('mainController', function($scope, $location) {
 
 
 		],
-		commission: [
+		Commission: [
 			{
 				img: 'img/art/eyegum-poster.jpg',
 				med: 'Digital Art',
@@ -139,7 +140,7 @@ apex.controller('mainController', function($scope, $location) {
 				],
 			}
 		],
-		murals: [
+		Mural: [
 			{
 				img: 'img/art/mural-bear.jpg',
 				med: 'Spray/Concrete',
@@ -211,9 +212,11 @@ apex.controller('homeController', function($scope, $timeout) {
 apex.controller('artController', function($scope, $location, PortfolioSelection) {
 	$scope.selectedSection = PortfolioSelection.section()
 	$scope.selectedItem = PortfolioSelection.item()
-	$scope.viewSection = function(section){
+	$scope.pageTitle = PortfolioSelection.title()
+	$scope.viewSection = function(section, title){
 			console.log(section)
 			PortfolioSelection.setSection(section)
+			PortfolioSelection.setTitle(title)
 			$location.path('art/view')
 	}
 	$scope.viewSelected = function(item){

@@ -104,7 +104,7 @@
   -moz-transform: rotate(360deg);
   -ms-transform: rotate(360deg);
   transition: transform 0s;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 #mobile-menu.open .hamburger-menu svg{
@@ -156,29 +156,6 @@
   color: #000;
 }
 
-
-  #nav {
-    display: flex;
-    flex-flow: row wrap;
-    align-content: center;
-    justify-content: space-around;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    height: auto;
-  }
-  #nav a {
-    margin: 20px;
-    display:flex;
-    align-self: center;
-    color: black;
-  }
-  #nav a:hover {
-    color: #eee;
-  }
-  #nav .active {
-    color: #eee;
-  }
   #content { 
     transition: opacity 0.2s;
     opacity: 1;
@@ -223,6 +200,41 @@
   #content a:hover {
 
   }
+
+  #footer .footer-buttons {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-around;
+
+  }
+  
+  #footer .contact-btn:hover {
+    max-width: 200px;
+    background: blue;
+    justify-content: center;
+  }
+
+  #footer .contact-btn:hover > p {
+    width: auto;
+  }
+
+  #footer .contact-btn p {
+    max-width: 100px;
+    color: black;
+    text-align: left;
+
+  }
+
+  #footer h3 {
+    font-size: 10px;
+    color: black;
+    width: 100%;
+    text-align: center;
+
+  }
   
 
   //==============  SECTIONS ====================='
@@ -264,15 +276,15 @@
 
   .home-blerb {
     padding-top: 50px;
-    width: 100%;
+    width: 80%;
     color: black;
     height: auto;
     text-align: left;
-    margin-left: 0%;
+    margin-left: 10%;
     padding-bottom: 50px;
   }
-  .home-blerb h3 {
-    margin-bottom: 50px;
+  .home-blerb p {
+    margin-bottom: 20px;
   }
 
   .flexbox {
@@ -336,10 +348,10 @@
    -webkit-filter: grayscale(100%);
     filter: gray;
   }
-  .apparel .banner-img:hover{
+/*  .apparel .banner-img:hover{
     -webkit-filter: none;
     filter: none;
-  }
+  }*/
   .apparel h2 {
     margin-left: 10%;
     width: 80%;
@@ -360,10 +372,10 @@
     width: 100%;
   }
   .quad-menu {
-    max-width: 550px;
+    max-width: 300px;
     min-height: 500px;
     display: flex;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 50px;
     flex-flow: row wrap;
     align-items: center;
@@ -434,8 +446,7 @@
 
   .back-btn {
     position: left;
-    padding-top: 20px ;
-    margin-top: 20px;
+    padding-top: 40px ;
     width: 50px;
     clear: right;
 
@@ -448,10 +459,12 @@
     color: black;
 
   }
-  .single-item-view .title {
+  .template .title {
+    color: black;
     text-align: center;
     width: 100%;
-    height: 100px;
+    margin-top: -50px;
+    height: 50px;
   }
 
   .single-item-view .item-img {
@@ -464,9 +477,6 @@
   .single-item-view .description {
     width: 90%;
     margin: 20px 5% 20px 5%;
-  }
-
-  #footer {
   }
 
   .inner-shadow {

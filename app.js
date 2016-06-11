@@ -1,6 +1,3 @@
-
-
-
 var apex = angular.module('apex', ['ngRoute', 'ngAnimate'])
 
 apex.config(function($routeProvider) {
