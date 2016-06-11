@@ -1,6 +1,6 @@
 <div class="quad-menu template {{transitionState}}">
 	<div ng-repeat="(section, items) in art" class="item hover-enlarge hover-color drop-shadow">
-  		<div ng-click="viewSection(items, section)" class="image-bg" style="background: url({{items[0].img}}) center" class="drop-shadow hover-color">
+  		<div ng-click="viewSection(items, section)" class="image-bg" style="background: url({{items[0].imgs[0]}}) center" class="drop-shadow hover-color">
 		  	<h2>{{section}}</h2>
 		</div>
 	</div>

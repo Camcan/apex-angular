@@ -6,14 +6,13 @@
 		</div>
 		<h2 class="title">{{pageTitle}}</h2>
 	<div id="portfolio" class="">
-		<div ng-repeat="singleWork in selectedSection" class="item hover-enlarge"> 
-			
+		<div ng-repeat="singleWork in selectedSection" class="item hover-enlarge">
 			  	<a ng-click="viewSelected(singleWork)" href="" class="">
-			  		<img ng-src="{{singleWork.img}}" class="drop-shadow">
-			  		<p class="title">{{singleWork.med}}</p>
+			  		<img ng-src="{{singleWork.imgs[0]}}" class="drop-shadow">
+			  		<p class="title">{{singleWork.title}},</br>
+			  		{{singleWork.med}}
+			  		</p>
 			  	</a>
-		 	<!-- <p>Medium: {{item.med}}</p> -->
-	
 		</div> 
 	</div>
 </div>
