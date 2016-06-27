@@ -49,8 +49,8 @@
     </a>
   </div>
   <div id="nav" ng-show="onDesktop">
-    <h2 ng-show="isActive('art') || isActive('apparel') || isActive('contact')">
-      <a id="home-link" ng-click="contentTransition()" href="#" ng-class=""><img src="img/bunny-black.png"></a>
+    <h2>
+      <a id="home-link" ng-click="contentTransition()" href="#" ng-class="({active:isActive('art') || isActive('apparel') || isActive('contact'))}"><img src="img/bunny-black.png"></a>
     </h2>
     <h2>
       <a id="art-link" ng-click="contentTransition()" href="#art" ng-class="{active:isActive('/art')}">ART</a>

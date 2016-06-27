@@ -103,7 +103,7 @@
    -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
   -ms-transform: rotate(360deg);
-  transition: transform 0s;
+  transition: transform 1s;
   margin-top: 10px;
 }
 
@@ -241,17 +241,20 @@
 
   /*==============  SECTIONS ====================='
 */
-   .home {min-height: 900px;
+   .home {min-height: 800px;
     width: 100%;
-    background: black url('../img/bunny-sticker.bmp') no-repeat center bottom;
+    background: rgba(0,0,0, 1) url('../img/bunny-sticker.bmp') no-repeat center bottom;
+    opacity:50%
   }
   .home-blerb{
-    padding-top: 30px;
+    color: #ff194f;
+    padding-top: 20px;
     width: 80%;
     height: auto;
     text-align: center;
     margin-left: 10%;
     padding-bottom: 0px;
+    transition: 1s margin-top 0.4s, height 0.4s
   }
   .home-blerb p {
     text-shadow: 1px 1px 3px#000;
@@ -418,8 +421,15 @@
     padding-top: 40px ;
     width: 50px;
     clear: right;
-
     cursor: pointer; cursor: hand; 
+
+  }
+  .back-btn {
+    transform: rotate(360deg);
+     -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transition: transform 1s;
   }
 
 
@@ -435,7 +445,11 @@
     margin-top: -50px;
     height: 50px;
   }
-
+  .single-item-view .details {
+    width: 50%;
+    max-width: 500px;
+    margin-left: 25%;
+  }
   .single-item-view .item-img {
     width: 100%;
   }
