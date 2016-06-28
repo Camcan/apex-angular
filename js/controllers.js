@@ -49,7 +49,7 @@ apex.controller('mainController', function($scope, $location, ImageDatabase) {
 	$scope.art = ImageDatabase.art()
 })
 
-apex.controller('homeController', function($scope, $timeout) {
+apex.controller('homeController', function($scope, $location) {
 	
 })
 
@@ -68,8 +68,26 @@ apex.controller('artController', function($scope, $location, PortfolioSelection)
 		console.log($scope.selectedItem)
 		$location.path('art/view/item')
 	}
+
 })
 
+apex.controller('slideShowController', function($scope, $timeout){
+	var slideShow = function(){
+	 	var slidesInSlideShow = 4
+		 $scope.slideshow = 1
+		 var slideTimer = function() {
+		 console.log('Slide: ', $scope.slideshow)
+			 $scope.$apply(
+			    function(){
+				    $scope.slideshow = ($scope.slideshow % slidesInSlideShow) + 1
+			    }
+		 	)
+			 $timeout(slideTimer, 4000)
+		 }
+		 $timeout(slideTimer, 4000)
+	}
+	slideShow()
+})
 
 apex.controller('apparelController', function($scope) {
 })

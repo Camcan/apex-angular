@@ -9,8 +9,10 @@
 		  	<p>Medium: {{selectedItem.med}}</p>
 			<p>{{selectedItem.desc}}</p>
 		</div>
-  		<div class="item-img">
-	  		<img ng-src="{{selectedItem.imgs[0]}}">
-  		</div>
-	</div>
+		<div ng-controller="slideShowController" class="imageslide" ng-animate="animate" ng-switch on="'imageslide'">
+		    <div ng-repeat="url in selectedItem.imgs track by $index" class="slider-content" ng-animate="'animate'"ng-switch-when="$index">
+		        <img src="{{url}}"/>
+		    </div>
+		   
+    	</div>
 </div>
