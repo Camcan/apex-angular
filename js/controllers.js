@@ -71,17 +71,22 @@ apex.controller('artController', function($scope, $location, PortfolioSelection)
 
 })
 
-apex.controller('slideShowController', function($scope, $timeout){
+apex.controller('slideShowController', function($scope, $timeout, PortfolioSelection){
+	$scope.slideshowIndex = 0
+	var slidesInSlideShow = $scope.selectedItem.imgs.length
 	var slideShow = function(){
-	 	var slidesInSlideShow = 4
-		 $scope.slideshow = 1
+	 	console.log(slidesInSlideShow)
 		 var slideTimer = function() {
-		 console.log('Slide: ', $scope.slideshow)
-			 $scope.$apply(
-			    function(){
-				    $scope.slideshow = ($scope.slideshow % slidesInSlideShow) + 1
-			    }
-		 	)
+		 	console.log('Slide: ', $scope.slideshowIndex)
+				    if($scope.slideshowIndex < slidesInSlideShow - 1){
+						$scope.$apply(
+						    $scope.slideshowIndex += 1
+					    )
+					}else{
+						$scope.$apply(
+					    	$scope.slideshowIndex = 0
+					    )
+					}
 			 $timeout(slideTimer, 4000)
 		 }
 		 $timeout(slideTimer, 4000)

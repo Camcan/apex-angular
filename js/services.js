@@ -33,50 +33,50 @@ apex.service('PortfolioSelection', function() {
 apex.service('ImageDatabase', function() {
   var art = {
     Fine: [
-      {
-        title: 'Floral Lips',
-        desc: '',
-        imgs: ['img/art/fine/lips.jpg', 'img/art/fine/lips-1.jpg'],
-        med: 'Felt Pen; Sketchbook',
-      },
-      {
-        title: 'Melting Face',
-        desc: '',
-        imgs: ['img/art/fine/melty-face.jpg'],
-        med: 'Felt Pen; Sketchbook',
-      },
+      // {
+      //   title: 'Floral Lips',
+      //   desc: '',
+      //   imgs: ['img/art/fine/lips.jpg', 'img/art/fine/lips-1.jpg'],
+      //   med: 'Felt Pen; Sketchbook',
+      // },
+      // {
+      //   title: 'Melting Face',
+      //   desc: '',
+      //   imgs: ['img/art/fine/melty-face.jpg'],
+      //   med: 'Felt Pen; Sketchbook',
+      // },
+      //  {
+      //   title: "My Heart is Screaming",
+      //   desc: '',
+      //   imgs: ['img/art/fine/screaming-heart.jpg'],
+      //   med: 'Oil & Watercolor on Parchment',
+      // },
        {
-        title: "My Heart is Screaming",
-        desc: '',
-        imgs: ['img/art/fine/screaming-heart.jpg'],
-        med: 'Oil & Watercolor on Parchment',
-      },
-       {
-        title: 'Tears',
+        title: 'Wish You Were Here',
         desc: '',
         imgs: ['img/art/fine/green-tears.jpg'],
         med: 'Watercolor on Parchment',
       },
-        {
-        title: 'Bad Thoughts Creep',
-        desc: '',
-        imgs: ['img/art/fine/bad-thoughts-creep.jpg'],
-        med: 'Felt Pen; Sketchbook',
-      },
-      {
-        title: 'Bars',
-        desc: '',
-        imgs: ['img/art/fine/bars.jpg'],
-        med: 'Watercolor on Parchment',
-      },
+      //   {
+      //   title: 'Bad Thoughts Creep',
+      //   desc: '',
+      //   imgs: ['img/art/fine/bad-thoughts-creep.jpg'],
+      //   med: 'Felt Pen; Sketchbook',
+      // },
+      // {
+      //   title: 'Bars',
+      //   desc: '',
+      //   imgs: ['img/art/fine/bars.jpg'],
+      //   med: 'Watercolor on Parchment',
+      // },
+      //  {
+      //   title: 'Betty',
+      //   desc: '',
+      //   imgs: ['img/art/fine/betty.jpg'],
+      //   med: 'Felt Pen; Sketchbook',
+      // },
        {
-        title: 'Betty',
-        desc: '',
-        imgs: ['img/art/fine/betty.jpg'],
-        med: 'Felt Pen; Sketchbook',
-      },
-       {
-        title: '',
+        title: 'Decay',
         desc: '',
         imgs: ['img/art/fine/diamond-lashes.jpg', 'img/art/fine/diamond-lashes-1.jpg', 'img/art/fine/diamond-lashes-2.jpg'],
         med: 'Oil & Spray on Canvas/Felt Pen in Sketchbook',
@@ -258,7 +258,7 @@ apex.service('ImageDatabase', function() {
     ],
     Body: [
       {
-        title: 'Circular Henna',
+        title: 'Henna Stencil',
         desc: '',
         imgs: ['img/art/body/circle-henna.jpg'],
         med: 'Traditional Arabic Henna Ink',
@@ -267,19 +267,19 @@ apex.service('ImageDatabase', function() {
         title: 'Ghostly',
         desc: '',
         imgs: ['img/art/body/ghostly-x4.jpg', 'img/art/body/ghostly.jpg'],
-        med: 'Body Paint',
+        med: 'Edited Photograph; Body Paint',
       },
       {
-        title: 'Wings',
+        title: 'Winged',
         desc: '',
         imgs: ['img/art/body/wings-1.jpg'],
         med: 'Body Paint',
       },
       {
-        title: 'One Halloween',
+        title: 'Anatomical Body Paint',
         desc: '',
         imgs: ['img/art/body/old-face.jpg', 'img/art/body/lethal.jpg'],
-        med: 'Body Paint',
+        med: 'Edited Photograph; Body Paint',
       }
     ],
     Commission: [
@@ -287,7 +287,7 @@ apex.service('ImageDatabase', function() {
         title: "EyeGum Poster",
         desc: '',
         imgs: ['img/art/commission/eyegum-poster.jpg'],
-        med: 'Digital Art'
+        med: 'Pro Marker & Photoshop'
       },
       {
         title: 'Massive Cover: Smoking',
@@ -296,16 +296,16 @@ apex.service('ImageDatabase', function() {
         med: 'Mixed-Media; Magazine Print',
       },
       {
-        title: 'Eek',
+        title: 'Eanie',
         desc: '',
         imgs: ['img/art/commission/framed-eek.jpg'],
-        med: 'What is dees',
+        med: 'Black Ink & Acrylic',
       },
       {
-        title: 'Erk',
+        title: 'Meanie',
         desc: '',
         imgs: ['img/art/commission/framed-erk.jpg'],
-        med: 'What is dees',
+        med: 'Black Ink & Acrylic',
       },
       {
         title: 'Early Framed Pieces',
@@ -314,166 +314,153 @@ apex.service('ImageDatabase', function() {
         'img/art/commission/framed-1.jpg', 
         'img/art/commission/framed-2.jpg', 
         'img/art/commission/framed-drmorsetattoo.jpg'],
-        med: 'What is dees',
+        med: '',
       },
+      // {
+      //   title: "M-E-O-W",
+      //   desc: '',
+      //   imgs: ['img/art/commission/meow.jpg'],
+      //   med: 'Oil on Canvas'
+      // },
       {
-        title: "M-E-O-W",
-        desc: '',
-        imgs: ['img/art/commission/meow.jpg'],
-        med: 'Oil on Canvas'
-      },
-      {
-        title: 'Spiraling Deck',
+        title: 'Papatuanuku',
         desc: '',
         imgs: [
         'img/art/commission/board-b&w.jpg', 
         'img/art/commission/board-b&w-1.jpg'],
-        med: 'Oil Paint & Varnish on Canadian Maple',
+        med: 'Black Gesso & Ink on Canadian Maple',
       },
+      // {
+      //   title: 'Cityscape Deck',
+      //   desc: '',
+      //   imgs: ['img/art/commission/board-cityscape.jpg'],
+      //   med: 'Oil Paint & Varnish on Canadian Maple',
+      // },
+      // {
+      //   title: 'Fucking Radical Deck',
+      //   desc: '',
+      //   imgs: ['img/art/commission/board-fucking-radical.jpg'],
+      //   med: 'Oil Paint & Varnish on Canadian Maple',
+      // },
       {
-        title: 'Cityscape Deck',
-        desc: '',
-        imgs: ['img/art/commission/board-cityscape.jpg'],
-        med: 'Oil Paint & Varnish on Canadian Maple',
-      },
-      {
-        title: 'Fucking Radical Deck',
-        desc: '',
-        imgs: ['img/art/commission/board-fucking-radical.jpg'],
-        med: 'Oil Paint & Varnish on Canadian Maple',
-      },
-      {
-        title: 'Woman-ly Deck',
+        title: 'Adonis',
         desc: '',
         imgs: ['img/art/commission/board-woman.jpg'],
         med: 'Oil Paint & Varnish on Canadian Maple',
       },
       {
-        title: 'Spiraling Longboard',
+        title: 'Rome',
         desc: '',
         imgs: [
         'img/art/commission/longboard-blue-waves.jpg', 
         'img/art/commission/longboard-blue-waves-1.jpg', 
         'img/art/commission/longboard-blue-waves-2.jpg'
         ],
-        med: 'Oil Paint & Varnish on Canadian Maple',
+        med: 'Acrylic Paint & Ink on Canadian Maple',
       },
       {
-        title: 'Green Pintail Longboard',
+        title: 'For Taz',
         desc: '',
         imgs: [
         'img/art/commission/longboard-green-waves.jpg', 
         'img/art/commission/longboard-green-waves-1.jpg'
         ],
-        med: 'Oil Paint & Varnish on Canadian Maple',
+        med: 'Acrylic Paint & Varnish on Canadian Maple',
       },
       {
-        title: 'Old Longboards',
+        title: 'Our Boards',
         desc: '',
         imgs: [
         'img/art/commission/longboards.jpg', 
         'img/art/commission/longboard-giraffe-1.jpg'
         ],
-        med: 'Oil Paint & Varnish on Canadian Maple'
+        med: 'Acrylic, Spray Paint, Ink & Felt Pen on Canadian Maple'
       },
 
       {
-        title: 'Mural: Tasman St',
+        title: 'Koi Fish (Wellington Electrity)',
         desc: '',
         imgs: [
         'img/art/commission/mural-tasman-st.jpg', 
         'img/art/commission/mural-tasman-st-1.jpg', 
         'img/art/commission/mural-tasman-st-2.jpg'
         ],
-        med: 'Spray Paint; Concrete',
+        med: 'Spray Paint',
       },
       {
-        title: 'Mural: Wrath',
+        title: 'Roar (Wellington Electricity)',
         desc: '',
         imgs: [
         'img/art/commission/mural-tiger-diamonds.jpg', 
         'img/art/commission/mural-tiger-diamonds-2.jpg', 
         'img/art/commission/mural-tiger-diamonds-4.jpg'
         ],
-        med: 'Spray Paint; Concrete',
+        med: 'Spray Paint',
       },
+      // {
+      //   title: 'Mural: Lips',
+      //   desc: '',
+      //   imgs: [
+      //   'img/art/commission/mural-lips.jpg'
+      //   ],
+      //   med: 'Spray Paint',
+      // },
+      // {
+      //   title: 'Mural: Day-Dream',
+      //   desc: '',
+      //   imgs: [
+      //   'img/art/commission/mural-daydream.jpg'
+      //   ],
+      //   med: 'Spray Paint; Concrete',
+      // },
       {
-        title: 'Mural: Lips',
-        desc: '',
-        imgs: [
-        'img/art/commission/mural-lips.jpg'
-        ],
-        med: 'Spray Paint; Concrete',
-      },
-      {
-        title: 'Mural: Day-Dream',
-        desc: '',
-        imgs: [
-        'img/art/commission/mural-daydream.jpg'
-        ],
-        med: 'Spray Paint; Concrete',
-      },
-      {
-        title: 'Mural: Bear',
-        desc: '',
+        title: 'Halloween',
+        desc: 'Mural commissioned by Wellington Electricity',
         imgs: [
         'img/art/commission/mural-bear.jpg'
         ],
         med: 'Spray Paint; Concrete',
       },
       {
-        title: 'Inner Calm',
-        desc: '',
+        title: 'The Creature',
+        desc: 'Mural commissioned by the late Fast Eddies',
         imgs: [
         'img/art/commission/purple-lady.jpg', 
         'img/art/commission/purple-lady-1.jpg'
         ],
         med: 'Spray & Oil Paint; Canvas',
-      },
-      {
-        title: "Mascara's a Bitch",
-        desc: '',
-        imgs: ['img/art/commission/spray-eyes.jpg'],
-        med: 'Spray & Oil Paint: Canvas'
-      },
-      {
-        title: 'Tattoo Design: Bird',
-        desc: '',
-        imgs: [
-        'img/art/commission/tattoo-bird.jpg'
-        ],
-        med: 'Pencil on Paper',
-      },
+      }
+      // {
+      //   title: "Mascara's a Bitch",
+      //   desc: '',
+      //   imgs: ['img/art/commission/spray-eyes.jpg'],
+      //   med: 'Spray & Oil Paint: Canvas'
+      // },
+      // {
+      //   title: 'Tattoo Design: Bird',
+      //   desc: '',
+      //   imgs: [
+      //   'img/art/commission/tattoo-bird.jpg'
+      //   ],
+      //   med: 'Pencil on Paper',
+      // },
     ],
     Digital: [
       {
-        title: "Sweetness",
+        title: "Twins",
+        desc: '',
+        imgs: ['img/art/digital/twins.jpg']
+      },
+      {
+        title: "Apex Predator",
         desc: '',
         imgs: ['img/art/digital/donut-vector.jpg'],
         med: 'Digital Art'
       },
       {
-        title: "Eyes",
+        title: "Angelina Zombie",
         desc: '',
-        imgs: ['img/art/digital/eyes.png'],
-        med: 'Digital Art'
-      },
-      {
-        title: "",
-        desc: '',
-        imgs: ['img/art/digital/lazers.jpg'],
-        med: 'Mixed Media'
-      },
-      {
-        title: "Angelina #1",
-        desc: '',
-        imgs: ['img/art/digital/digital-angelina2.jpg'],
-        med: 'Digital Art'
-      },
-      {
-        title: "Angelina #2",
-        desc: '',
-        imgs: ['img/art/digital/digital-angelina.jpg'],
+        imgs: ['img/art/digital/digital-angelina2.jpg','img/art/digital/digital-angelina.jpg'],
         med: 'Digital Art'
       },
       {
@@ -483,7 +470,7 @@ apex.service('ImageDatabase', function() {
         med: 'Digital Art'
       },
       {
-        title: "Eye Roll",
+        title: "Shred 'til ur Dead",
         desc: '',
         imgs: ['img/art/digital/digital-eye-roll.jpg'],
         med: 'Digital Art'
@@ -491,20 +478,7 @@ apex.service('ImageDatabase', function() {
       {
         title: "Mother Mary",
         desc: '',
-        imgs: ['img/art/digital/mother-mary.jpg'],
-        med: 'Digital Art'
-      },
-      {
-        title: "Digital Bear",
-        desc: '',
-        imgs: ['img/art/digital/digital-bear.jpg'],
-        med: 'Digital Art'
-      },
-      {
-        title: "Haphazard Beehive",
-        desc: '',
-        imgs: ['img/art/digital/squiggly-beehive.jpg'],
-        med: 'Digital Art'
+        imgs: ['img/art/digital/mother-mary.jpg']
       }
     ]
   }

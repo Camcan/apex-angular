@@ -69,7 +69,7 @@
   }
 
   #title {
-    margin-top: 50px;
+    margin-top: 20px;
     align-self: center;
     height: 100px;
     width: 100%;
@@ -109,12 +109,11 @@
 
 #mobile-menu.open .hamburger-menu svg{
   color: #fff;
-  margin-left: 85%;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
-  transition: transform 1s, margin-left 1s;
+  transition: transform 1s;
 }
 
 
@@ -146,10 +145,10 @@
   width: 100%;
   text-align: center;
   display: inline-block;
-  color: #fff;
-  text-shadow: 0 0 2px #000;
-  -moz-text-shadow: 0 0 2px #000;
-  -webkit-text-shadow: 0 0 2px #000;
+  color: #ff194f;
+  text-shadow: 0 1px 2px #000;
+  -moz-text-shadow: 0 1px 2px #000;
+  -webkit-text-shadow: 0 1px 2px #000;
 }
 #mobile-menu ul li a img {
   max-height: 50px;
@@ -166,7 +165,8 @@
     margin-right: auto;
     width: 100%;
     margin-top: -20px;
-    min-height: 500px;
+    /*min-height: 500px;*/
+    overflow: none;
     height: auto;
   }
   #content.ng-hide {
@@ -268,6 +268,7 @@
     height: 200px;
   }
   #contact-page {
+    padding-bottom: 30px;
     display: flex;
     flex-flow: row wrap;
   }
@@ -378,17 +379,19 @@
     height: 100%;
   }
 
+
   #portfolio {
+    padding-bottom: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
     padding-bottom: 50px;
   }
 
   #portfolio .item {
-    align-self: center;
-    display: inline-flex;
-    background: black;
     margin: 5px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 65px;
     margin-right: 10px;
     margin-left: 10px;
     height: auto;
@@ -401,14 +404,14 @@
   #portfolio .item img {
     max-height: 300px;
     max-width: 100%;
+    z-index: 0;
   }
 
-  #portfolio .item p {
-    color: white;
-    max-width: 200px;
-    display: relative;
-    margin: 0;
-    margin-top: -40px;
+  #portfolio .item-title {
+    color: #000;
+    text-align: right;
+    max-width: 300px;
+    margin: 0px 10px 0 10px;
   }
 
   #profile-bg {
@@ -418,14 +421,14 @@
 
   .back-btn {
     position: left;
-    margin-left: 20%;
+    margin-left: 10%;
     padding-top: 40px ;
     width: 50px;
     clear: right;
     cursor: pointer; cursor: hand; 
 
   }
-  .back-btn {
+  .back-btn.ng-show {
     transform: rotate(360deg);
      -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -435,9 +438,13 @@
 
 
   .single-item-view {
+    align-self: center;
     width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
     color: black;
-
+    height: auto;
   }
   .template .title {
     color: black;
@@ -456,6 +463,7 @@
   }
   .single-item-view .item-img img {
     width: 100%;
+    margin: 1 0px auto 0px auto;
   }
 
   .single-item-view .description {
@@ -486,19 +494,18 @@
   width:100%;
   margin: 0 auto;
   margin-bottom: 20px;
-  overflow: none;
   position:relative;
   text-align: center;
 }
 
 .imageslide .slider-content {
-  position: absolute;
   width:100%;
-  height:400px;
-  
+}
+.slider-content img{
+  width:100%;
 }
 
-.animate-enter,.animate-leave {
+.imageslide .ng-hide-remove, .imageslide .ng-hide-add {
   -webkit-transition:1000ms cubic-bezier(.165,.84,.44,1) all;
   -moz-transition:1000ms cubic-bezier(.165,.84,.44,1) all;
   -ms-transition:1000ms cubic-bezier(.165,.84,.44,1) all;
@@ -506,12 +513,15 @@
   transition:1000ms cubic-bezier(.165,.84,.44,1) all;
 }
 
+.imageslide .ng-hide-remove {
+  margin-left:-100%;
+}
 .animate-enter {
   left:100%;
 }
 
 .animate-enter.animate-enter-active {
-  left:0;
+  left:0; 
 }
 
 .animate-leave {
@@ -519,7 +529,6 @@
 }
 
 .animate-leave.animate-leave-active {
-  margin-left:-100%;
 }
 
 }

@@ -9,9 +9,12 @@
 		<div ng-repeat="singleWork in selectedSection" class="item hover-enlarge">
 			  	<a ng-click="viewSelected(singleWork)" href="" class="">
 			  		<img ng-src="{{singleWork.imgs[0]}}" class="drop-shadow">
-			  		<p class="title">{{singleWork.title}},</br>
-			  		{{singleWork.med}}
-			  		</p>
+			  		<div class="item-title">
+				  		<p>
+					  		{{singleWork.title}},</br>
+					  		{{singleWork.med}}
+				  		</p>
+			  		</div>
 			  	</a>
 		</div> 
 	</div>
