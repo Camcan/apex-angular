@@ -350,6 +350,7 @@
     max-width: 300px;
     min-height: 500px;
     display: flex;
+    text-align
     padding-top: 20px;
     padding-bottom: 50px;
     flex-flow: row wrap;
@@ -368,10 +369,12 @@
   .quad-menu .item img {
     max-height: 250px;
   }
-  .item h2 {
-    text-align: right;
-    color: white;
-    background: rgba(0,0,0,0.2);
+  .quad-menu .item h2 {
+    text-align: center;
+    color: black;
+    text-shadow: 0 2px 2px #eee;
+    -moz-text-shadow: 0 2px 2px #eee;
+    -webkit-text-shadow: 0 2px 2px #eee;
     font-weight: bold
   }
   .item .image-bg { 
@@ -384,19 +387,19 @@
     padding-bottom: 50px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
     padding-bottom: 50px;
   }
 
   #portfolio .item {
     margin: 5px;
     margin-top: 10px;
-    margin-bottom: 65px;
+    margin-bottom: 50px;
     margin-right: 10px;
     margin-left: 10px;
     height: auto;
     width: auto;
-    min-height: 200px;
+    min-height: 300px;
     max-width: 400px;
     max-height: 300px;
   }
