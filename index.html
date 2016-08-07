@@ -35,19 +35,6 @@
       <li ng-click="toggleMenu(); contentTransition()" ng-show="mobileMenu"><a href="#contact">CONTACT</a></li>
     </ul>
   </nav>
-  <div id="header">
-    <a id="title" href="/#">
-    <img ng-show="onDesktop" class="bunny" src="img/bunny-white.png">
-    <img ng-show="onDesktop" class="bunny" src="img/bunny-white.png">
-    <img ng-show="onDesktop" class="bunny" src="img/bunny-white.png">
-    <img ng-show="onDesktop || mobileMenu" class="bunny" src="img/bunny-white.png">
-    <img src="img/apex-label.gif">
-    <img ng-show="onDesktop || mobileMenu" class="bunny" src="img/bunny-white.png">
-    <img ng-show="onDesktop" class="bunny" src="img/bunny-white.png">
-    <img ng-show="onDesktop" class="bunny" src="img/bunny-white.png">
-    <img ng-show="onDesktop" class="bunny" src="img/bunny-white.png">
-    </a>
-  </div>
   <div id="nav" ng-show="onDesktop">
     <h2>
       <a id="home-link" ng-click="contentTransition()" href="#" ng-class=""><img src="img/bunny-black.png"></a>
@@ -61,6 +48,19 @@
     <h2>
       <a id="contact-link" ng-click="contentTransition()" href="#contact" ng-class="{active:isActive('/contact')}">ABOUT</a>
     </h2>
+  </div>
+  <div id="header">
+    <a id="title" href="/#">
+    <img ng-show="onDesktop" class="bunny" src="img/bunny-white.png">
+    <img ng-show="onDesktop" class="bunny" src="img/bunny-white.png">
+    <img ng-show="onDesktop" class="bunny" src="img/bunny-white.png">
+    <img ng-show="onDesktop || mobileMenu" class="bunny" src="img/bunny-white.png">
+    <img src="img/apex-label.gif">
+    <img ng-show="onDesktop || mobileMenu" class="bunny" src="img/bunny-white.png">
+    <img ng-show="onDesktop" class="bunny" src="img/bunny-white.png">
+    <img ng-show="onDesktop" class="bunny" src="img/bunny-white.png">
+    <img ng-show="onDesktop" class="bunny" src="img/bunny-white.png">
+    </a>
   </div>
   <div id="content-loader" ng-show="transitionState">
     <svg version="1.2" height="300" width="600" xmlns="http://www.w3.org/2000/svg" viewport="0 0 60 60" xmlns:xlink="http://www.w3.org/1999/xlink">
