@@ -9,10 +9,9 @@
 		  	<p>Medium: {{selectedItem.med}}</p>
 			<p>{{selectedItem.desc}}</p>
 		</div>
-		<div ng-controller="slideShowController" class="imageslide">
-		    <div ng-repeat="url in selectedItem.imgs track by $index" class="slider-content animate" ng-show="(slideshowIndex == selectedItem.imgs.indexOf(url))">
-		    	<h2></h2>
+		<ul ng-controller="slideShowController" class="imageslide">
+		    <li ng-repeat="url in selectedItem.imgs track by $index" class="slider-content animate" ng-show="(slideshowIndex == selectedItem.imgs.indexOf(url))">
 		        <img src="{{url}}"/>
-		    </div>
+		    </li>
     	</div>
 </div>

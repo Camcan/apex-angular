@@ -65,7 +65,7 @@
     display: flex;
     flex-flow: column wrap;
     width: 100%;
-    height: 180px;
+    height: contain;
   }
 
   #title {
@@ -164,7 +164,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    margin-top: -20px;
+    margin-top: 0px;
     /*min-height: 500px;*/
     overflow: none;
     height: auto;
@@ -241,9 +241,11 @@
 
   /*==============  SECTIONS ====================='
 */
-   .home {min-height: 800px;
+   .home {min-height: 600px;
     width: 100%;
-    background: rgba(0,0,0, 1) url('../img/bunny-sticker.bmp') no-repeat center bottom;
+    background: rgba(0,0,0, 1) url('../img/bunny-sticker.bmp') no-repeat center;
+    background-clip: border-box;
+    background-size: contain;
     opacity:50%
   }
   .home-blerb{
@@ -257,6 +259,8 @@
     transition: 1s margin-top 0.4s, height 0.4s
   }
   .home-blerb p {
+    margin: auto auto;
+    max-width: 300px;
     text-shadow: 1px 1px 3px#000;
     margin-bottom: 20px;
   }
@@ -307,19 +311,20 @@
     visibility: hidden;
   }
   .apparel {
-    padding-top: 20px;
+    padding-top: 0px;
     width: 100%;
     height: 100%;
     color: black;
   }
   .apparel .banner-img{
     height: 100px;
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     background-size: cover;
-    background: url('../img/apparel/folded-shirts.jpg') center fixed no-repeat;
-    background-size: contain;
+    background: url('../img/apparel/folded-shirts.jpg') top fixed no-repeat;
+    background-size: 100% auto;
+    /*background-size: contain;*/
    -webkit-filter: grayscale(100%);
     filter: gray;
   }
